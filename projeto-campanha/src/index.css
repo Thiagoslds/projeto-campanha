@@ -1,0 +1,36 @@
+/*Header*/
+#header {
+  background-color: #FFCB7C;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.header-menu a {
+  margin: 1rem;
+  text-decoration: none;
+  color: #212121;
+}
+
+.header-logo img {
+  width: 150px;
+}
+
+.header-button {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.header-button button {
+  background-color: #6B240C;
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
