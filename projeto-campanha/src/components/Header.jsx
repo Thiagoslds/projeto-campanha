@@ -4,12 +4,12 @@ export default function Header() {
     return (
         <>
             <div id="header">
-                <div class="header-logo">
+                <div className="header-logo">
                     <a href="/">
                         <img src={logoCampanha} alt="Logo da Campanha do Pãozinho"></img>
                     </a>
                 </div>
-                <nav class="header-menu">
+                <nav className="header-menu">
                     <a href="/">
                         <p>Sobre nós</p>
                     </a>
@@ -20,8 +20,8 @@ export default function Header() {
                         <p>Parceiros</p>
                     </a>
                 </nav>
-                <div class="header-button">
-                    <button>Faça sua doação</button>
+                <div className="header-button">
+                    <button className="button-red">Faça sua doação</button>
                 </div>
             </div>
         </>
