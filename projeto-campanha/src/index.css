@@ -194,20 +194,20 @@ body {
 
 .area-voluntario-info-1 {
   background-image: linear-gradient(to bottom,
-  #6B240C,
-  rgba(255, 203, 124, 0.5)), url("./assets/imagem-campanha-grupo1.jpeg");
+      #6B240C,
+      rgba(255, 203, 124, 0.5)), url("./assets/imagem-campanha-grupo1.jpeg");
 }
 
 .area-voluntario-info-2 {
   background-image: linear-gradient(to bottom,
-  #6B240C,
-  rgba(255, 203, 124, 0.5)), url("./assets/imagem-campanha-grupo2.jpeg");
+      #6B240C,
+      rgba(255, 203, 124, 0.5)), url("./assets/imagem-campanha-grupo2.jpeg");
 }
 
 .area-voluntario-info-3 {
   background-image: linear-gradient(to bottom,
-  #6B240C,
-  rgba(255, 203, 124, 0.5)), url("./assets/imagem-campanha-grupo3.jpeg");
+      #6B240C,
+      rgba(255, 203, 124, 0.5)), url("./assets/imagem-campanha-grupo3.jpeg");
 }
 
 #area-voluntario div p {
@@ -258,4 +258,32 @@ body {
 
 #rodape-baixo p {
   margin-bottom: 0;
+}
+
+/*Modal*/
+.modal-doacao {
+  width: 40rem;
+  height: 35rem;
+  text-align: center;
+}
+
+.modal-doacao p:not(.modal-doacao-line) {
+  font-weight: 400;
+}
+
+.modal-doacao::backdrop {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-doacao img {
+  width: 300px;
+}
+
+.modal-doacao-line {
+  border-style: solid;
+  border: 1px solid #FFCB7C;
+  max-width: 100%;
+  overflow: inherit;
+  font-weight: 600;
+  cursor: pointer;
 }
