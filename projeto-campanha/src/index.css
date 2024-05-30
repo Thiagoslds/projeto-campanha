@@ -22,30 +22,34 @@ body {
   background-color: #FFCB7C;
   display: flex;
   justify-content: space-between;
+  height: 5rem;
 }
 
 .header-menu {
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .header-menu a {
   margin: 1rem;
   text-decoration: none;
   color: #212121;
+  height: 30px;
 }
 
-.header-logo img {
-  width: 150px;
+.header-menu a:hover {
+  color: #6B240C;
 }
 
-.header-button {
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
+.header-image-logo {
+  width: 5rem;
 }
 
+.header-image-letter {
+  width: 25rem;
+}
 
 /*Banner*/
 #banner {

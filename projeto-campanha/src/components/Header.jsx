@@ -1,28 +1,28 @@
 import logoCampanha from '../assets/logo-campanha.png'
+import letraCampanha from '../assets/letra-campanha.png'
 
 export default function Header() {
     return (
         <>
             <div id="header">
-                <div className="header-logo">
+                <div className="header-image">
                     <a href="/">
-                        <img src={logoCampanha} alt="Logo da Campanha do Pãozinho"></img>
+                        <img className="header-image-logo" src={logoCampanha} alt="Logo da Campanha do Pãozinho"></img>
+                        <img className="header-image-letter" src={letraCampanha} alt="Letra da Campanha do Pãozinho"></img>
                     </a>
                 </div>
+                
                 <nav className="header-menu">
                     <a href="/">
-                        <p>Sobre nós</p>
+                        Sobre nós
                     </a>
                     <a href="/">
-                        <p>Saiba como ajudar</p>
+                        Saiba como ajudar
                     </a>
-                    <a href="/"> 
-                        <p>Parceiros</p>
+                    <a href="/">
+                        Parceiros
                     </a>
                 </nav>
-                <div className="header-button">
-                    <button className="button-red">Faça sua doação</button>
-                </div>
             </div>
         </>
     );

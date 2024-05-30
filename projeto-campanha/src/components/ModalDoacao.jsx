@@ -3,6 +3,7 @@ import pix20 from "../assets/pix-20.jpeg";
 import pix50 from "../assets/pix-50.jpeg";
 import pix100 from "../assets/pix-100.jpeg";
 import pix200 from "../assets/pix-200.jpeg";
+import pix0 from "../assets/pix-0.jpeg";
 
 
 const modalDoacao = forwardRef(
@@ -28,6 +29,8 @@ const modalDoacao = forwardRef(
                 linePixPaste = "00020126490014br.gov.bcb.pix0127campanha.paozinho@gmail.com5204000053039865406200.005802BR5925Vanessa Souza Lopes Silve6009Sao Paulo62070503***63042ED2";
                 break;
             default:
+                valuePixDefault = pix0;
+                linePixPaste = "00020126490014br.gov.bcb.pix0127campanha.paozinho@gmail.com5204000053039865802BR5925Vanessa Souza Lopes Silve6009Sao Paulo62070503***63046017";
                 break;
         }
 
@@ -41,7 +44,7 @@ const modalDoacao = forwardRef(
                 <p>É só apontar a câmera do seu celular para ler o QR Code!</p>
                 <img src={valuePixDefault} alt="QR-Code de pix" />
                 <p>Ou, se preferir, clique e copie a chave PIX abaixo:</p>
-                <p class="modal-doacao-line" onClick={() => { copyText(linePixPaste) }}>{linePixPaste}</p>
+                <p className="modal-doacao-line" onClick={() => { copyText(linePixPaste) }}>{linePixPaste}</p>
                 <form method="dialog">
                     <button className="button-red">Fechar</button>
                 </form>
