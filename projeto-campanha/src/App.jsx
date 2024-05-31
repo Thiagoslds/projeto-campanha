@@ -1,19 +1,23 @@
-import Banner from './components/Banner'
-import Header from './components/Header'
-import InfoDoacao from './components/InfoDoacao'
-import InfoSocial from './components/InfoSocial'
-import InfoVoluntario from './components/InfoVoluntario'
-import Rodape from './components/Rodape'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import Sobre from './pages/Sobre'
+import Home from './pages/Home';
+import RootLayout from './pages/Root';
+
+const routerData = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootLayout />,
+    children: [
+      { path: '/', element: <Home /> },
+      { path: '/sobre', element: <Sobre /> }
+    ]
+  }
+]);
 
 function App() {
   return (
     <>
-      <Header />
-      <Banner />
-      <InfoDoacao />
-      <InfoSocial />
-      <InfoVoluntario />
-      <Rodape />
+      <RouterProvider router={routerData} />
     </>
   )
 }

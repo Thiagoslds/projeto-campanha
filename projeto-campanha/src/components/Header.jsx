@@ -1,27 +1,28 @@
 import logoCampanha from '../assets/logo-campanha.png'
 import letraCampanha from '../assets/letra-campanha.png'
+import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
         <>
             <div id="header">
                 <div className="header-image">
-                    <a href="/">
+                    <Link to="/">
                         <img className="header-image-logo" src={logoCampanha} alt="Logo da Campanha do Pãozinho"></img>
                         <img className="header-image-letter" src={letraCampanha} alt="Letra da Campanha do Pãozinho"></img>
-                    </a>
+                    </Link>
                 </div>
                 
                 <nav className="header-menu">
-                    <a href="/">
+                    <Link to="/sobre">
                         Sobre nós
-                    </a>
-                    <a href="/">
+                    </Link>
+                    <Link to="/">
                         Saiba como ajudar
-                    </a>
-                    <a href="/">
+                    </Link>
+                    <Link to="/">
                         Parceiros
-                    </a>
+                    </Link>
                 </nav>
             </div>
         </>

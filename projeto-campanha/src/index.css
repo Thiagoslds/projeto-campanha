@@ -131,6 +131,8 @@ body {
 /*Area Doação*/
 #area-doacao {
   display: flex;
+  justify-content: center;
+  margin: 30px 0;
 }
 
 .area-doacao-info h1 {
@@ -174,7 +176,7 @@ body {
 }
 
 
-/*Area Localização*/
+/*Area voluntário*/
 #area-voluntario {
   display: flex;
   justify-content: space-evenly;
@@ -265,6 +267,7 @@ body {
 }
 
 /*Modal*/
+
 .modal-doacao {
   width: 40rem;
   height: 35rem;
@@ -290,4 +293,34 @@ body {
   overflow: inherit;
   font-weight: 600;
   cursor: pointer;
+}
+
+/*Pagina Sobre*/
+
+
+.pagina-sobre-bloco {
+  display: flex;
+  align-items: center;
+}
+
+.pagina-sobre-bloco img{
+  width: 30rem;
+  margin: 30px;
+}
+
+.pagina-sobre-bloco p{
+  margin: 30px;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #6B240C;
+}
+
+#pagina-sobre {
+  margin-top: 100px;
+}
+
+#pagina-sobre h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
 }
