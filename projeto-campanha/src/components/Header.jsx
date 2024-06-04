@@ -17,8 +17,8 @@ export default function Header() {
                     <Link to="/sobre">
                         Sobre nós
                     </Link>
-                    <Link to="/">
-                        Saiba como ajudar
+                    <Link to="/ajude">
+                        Ajude-nos
                     </Link>
                     <Link to="/">
                         Parceiros

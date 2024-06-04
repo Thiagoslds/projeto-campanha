@@ -17,6 +17,15 @@ body {
   font-weight: 600;
 }
 
+.titulo-h1 {
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+  background-color: #6B240C;
+  padding: 50px;
+  color: #FFF8E1;
+}
+
 /*Header*/
 #header {
   background-color: #FFCB7C;
@@ -303,24 +312,57 @@ body {
   align-items: center;
 }
 
-.pagina-sobre-bloco img{
+.pagina-sobre-bloco img {
   width: 30rem;
-  margin: 30px;
+  margin: 40px 30px 5px 30px;
 }
 
-.pagina-sobre-bloco p{
+.pagina-sobre-bloco p {
   margin: 30px;
   font-weight: 500;
   font-size: 1.6rem;
   color: #6B240C;
+  text-align: justify;
 }
 
 #pagina-sobre {
-  margin-top: 100px;
+  margin: 100px 80px 50px 80px;
 }
 
-#pagina-sobre h1 {
-  text-align: center;
-  font-size: 4rem;
-  text-transform: uppercase;
+.pagina-sobre-bloco-legenda p {
+  font-size: 1rem;
+  color: #212121;
+  margin-top: 1px;
+}
+
+/*Página Como Ajudar*/
+
+#pagina-ajudar {
+  margin: 100px 80px 50px 80px;
+}
+
+.pagina-ajudar-bloco {
+  display: flex;
+  border: solid #6B240C;
+  border-width: 0 0 3px 0;
+  margin: 80px 80px 80px 0;
+}
+
+.pagina-ajudar-bloco-texto p {
+  text-align: justify;
+  font-weight: 400;
+}
+
+.pagina-ajudar-bloco-linha {
+  display: flex;
+  justify-content: center;
+}
+
+.pagina-ajudar-bloco img {
+  border-radius: 50%;
+  border: 1px solid #212121;
+  width: 150px;
+  height: 150px;
+  margin: 0 20px 20px 0;
+  object-fit: cover;
 }
