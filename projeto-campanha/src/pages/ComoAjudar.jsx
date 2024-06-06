@@ -4,8 +4,17 @@ import Imagem3 from '../assets/ia-pao.jpg'
 import Imagem4 from '../assets/ia-leite.jpg'
 import Imagem5 from '../assets/img-insta.jpg'
 import Imagem6 from '../assets/ia-convite.jpg'
+import { useRef } from 'react'
+import ModalDoacao from "../components/ModalDoacao";
 
 export default function ComoAjudar() {
+    const dialogModal = useRef();
+    const instaLink = "https://www.instagram.com/campanhadopaozinho?igsh=ajFzdzI4eWZpd3Nl";
+
+    function handleClick() {
+        dialogModal.current.showModal();
+    }
+
     return (
         <div id="pagina-ajudar">
             <h1 className="titulo-h1">Saiba como ajudar</h1>
@@ -13,10 +22,11 @@ export default function ComoAjudar() {
                 <div className="pagina-ajudar-bloco">
                     <img src={Imagem1} alt="Imagem circular ilustrativa" />
                     <div className="pagina-ajudar-bloco-texto">
+                        <ModalDoacao ref={dialogModal} valuePix={0} />
                         <h3>Ajude financeiramente</h3>
                         <p>
-                            Contribua com um pix para podermos comprar os materiais, seja o pão, o leite, achocolotado, etc. 
-                            Nosso pix é campanha.paozinho@gmail.com ou <b>clique aqui</b>.
+                            Contribua com um pix para podermos comprar os materiais, seja o pão, o leite, achocolotado, etc.
+                            Nosso pix é campanha.paozinho@gmail.com ou <a onClick={handleClick}><b>clique aqui</b></a> .
                         </p>
                     </div>
                 </div>
@@ -25,7 +35,7 @@ export default function ComoAjudar() {
                     <div className="pagina-ajudar-bloco-texto">
                         <h3>Seja um voluntário</h3>
                         <p>
-                            Venha e participe da nossa distribuição como tarefeiro! Basta visitar o prédio do p7 Criativo, 
+                            Venha e participe da nossa distribuição como tarefeiro! Basta visitar o prédio do p7 Criativo,
                             na rua Rio de Janeiro, 471, todos os domingos a partir das 17h45.
                         </p>
                     </div>
@@ -37,7 +47,7 @@ export default function ComoAjudar() {
                     <div className="pagina-ajudar-bloco-texto">
                         <h3>Seja uma padaria parceira</h3>
                         <p>
-                            Caso tenha comércio de padarias ou fabricação de pães e queira doar, entre em contato com a gente! 
+                            Caso tenha comércio de padarias ou fabricação de pães e queira doar, entre em contato com a gente!
                             Distribuímos mais de 500 pães a cada fim de semana e precisamos de doações.
                         </p>
                     </div>
@@ -47,7 +57,7 @@ export default function ComoAjudar() {
                     <div className="pagina-ajudar-bloco-texto">
                         <h3>Doe leite</h3>
                         <p>
-                            Faça doações de caixas de leite! Distribuímos mais de 60 litros de leite com achocolatado 
+                            Faça doações de caixas de leite! Distribuímos mais de 60 litros de leite com achocolatado
                             todos os domingos e sempre precisamos de doações para manter a distribuição.
                         </p>
                     </div>
@@ -59,8 +69,8 @@ export default function ComoAjudar() {
                     <div className="pagina-ajudar-bloco-texto">
                         <h3>Siga-nos no Instagram</h3>
                         <p>
-                            Caso você tenha Instagram, siga a gente por lá e saiba das novidades, das campanhas especiais 
-                            e das doações que estaremos precisando no momento. <b>Siga a gente!</b> 
+                            Caso você tenha Instagram, siga a gente por lá e saiba das novidades, das campanhas especiais
+                            e das doações que estaremos precisando no momento. <a href={instaLink}><b>Siga a gente!</b></a>
                         </p>
                     </div>
                 </div>
@@ -69,7 +79,7 @@ export default function ComoAjudar() {
                     <div className="pagina-ajudar-bloco-texto">
                         <h3>Divulgue nosso trabalho</h3>
                         <p>
-                            Compartilhe com seus parentes e amigos nossa tarefa! Assim mais pessoas poderão nos ajudar 
+                            Compartilhe com seus parentes e amigos nossa tarefa! Assim mais pessoas poderão nos ajudar
                             e fortalecer o trabalho essencial para os irmãos vulneráveis das ruas de BH.
                         </p>
                     </div>

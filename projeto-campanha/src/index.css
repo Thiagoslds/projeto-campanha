@@ -213,6 +213,33 @@ body {
       rgba(255, 203, 124, 0.5)), url("./assets/imagem-campanha-grupo1.jpeg");
 }
 
+.area-voluntario-info-1:hover {
+  background-image: url("./assets/imagem-campanha-grupo1.jpeg");
+}
+
+.area-voluntario-info-1:hover p {
+  color: #212121;
+  background-color: #FFCB7C;
+}
+
+.area-voluntario-info-2:hover {
+  background-image: url("./assets/imagem-campanha-grupo2.jpeg");
+}
+
+.area-voluntario-info-2:hover p {
+  color: #212121;
+  background-color: #FFCB7C;
+}
+
+.area-voluntario-info-3:hover {
+  background-image: url("./assets/imagem-campanha-grupo3.jpeg");
+}
+
+.area-voluntario-info-3:hover p {
+  color: #212121;
+  background-color: #FFCB7C;
+}
+
 .area-voluntario-info-2 {
   background-image: linear-gradient(to bottom,
       #6B240C,
@@ -226,7 +253,7 @@ body {
 }
 
 #area-voluntario div p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -365,4 +392,54 @@ body {
   height: 150px;
   margin: 0 20px 20px 0;
   object-fit: cover;
+}
+
+.pagina-ajudar-bloco-texto a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #6B240C;
+}
+
+/*Parceiros*/
+
+.slider {
+  margin: 0 20px;
+  overflow: "hidden";
+  padding: 2rem 0;
+}
+
+.slider img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.parceiro-texto-invisivel {
+  display: none;
+}
+
+.parceiro-bloco {
+  margin: 2rem 8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.parceiro-bloco h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  color: #6B240C;
+}
+
+.parceiro-bloco P {
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+.parceiro-bloco img {
+  width: 30rem;
+}
+
+.parceiro-bloco span {
+  font-size: 1rem;
 }

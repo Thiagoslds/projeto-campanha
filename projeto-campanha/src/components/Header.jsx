@@ -20,7 +20,7 @@ export default function Header() {
                     <Link to="/ajude">
                         Ajude-nos
                     </Link>
-                    <Link to="/">
+                    <Link to="/parceiros">
                         Parceiros
                     </Link>
                 </nav>
