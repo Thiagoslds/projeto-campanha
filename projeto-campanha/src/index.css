@@ -443,3 +443,52 @@ body {
 .parceiro-bloco span {
   font-size: 1rem;
 }
+
+/* Fale Conosco */
+form {
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: linear-gradient(180deg, #212121, #6B240C);
+  border-radius: 8px;
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5);
+  color: #FFF8E1;
+}
+
+label {
+  text-transform: uppercase;
+}
+
+.form-contato-dados {
+  display: flex;
+}
+
+.form-contato-campo {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 90%;
+}
+
+.form-contato-mensagem {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.button-form {
+  background-color: #FFCB7C;
+  color: #212121;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.form-contato-botao {
+  display: flex;
+  justify-content: center;
+}
