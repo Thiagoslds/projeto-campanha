@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-//const DOMAIN = 'https://ee0b52ab-d149-49d5-a575-34357dccfce7.mock.pstmn.io';
-const DOMAIN = 'http://localhost:5010';
+const apiUrl = import.meta.env.VITE_URL_LOCAL;
 
 export default function FaleConosco() {
     const [isSuccess, setIsSuccess] = useState(false);
@@ -16,7 +15,7 @@ export default function FaleConosco() {
     }
 
     async function sendData(userData) {
-        const response = await fetch(`${DOMAIN}/user-data`, {
+        const response = await fetch(`${apiUrl}/user-data`, {
             method: 'POST',
             body: JSON.stringify(userData),
             headers: {
@@ -24,9 +23,7 @@ export default function FaleConosco() {
             }
         });
 
-        //const resData = await response.json();
         response.status === 200 ? setIsSuccess(true) : setIsSuccess(false);
-        console.log('Resposta: ' + response.status);
     }
 
     return (

@@ -269,7 +269,7 @@ body {
 #rodape-cima {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 50px;
+  padding: 20px 10px 50px 10px;
 }
 
 .rodape-cima-local {
@@ -281,12 +281,14 @@ body {
 }
 
 .rodape-cima-sites div {
-  margin: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.rodape-cima-sites a {
+.rodape-cima-sites-link {
   text-decoration: none;
   color: white;
+  margin: 10px;
 }
 
 .rodape-cima-social {
@@ -445,7 +447,7 @@ body {
 }
 
 /* Fale Conosco */
-form {
+#form-contato {
   width: 90%;
   max-width: 40rem;
   margin: 3rem auto;

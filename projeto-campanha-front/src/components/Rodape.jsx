@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Rodape() {
     return (
         <div id="rodape">
@@ -8,25 +10,25 @@ export default function Rodape() {
                 </div>
                 <nav className="rodape-cima-sites">
                     <div>
-                        <a href="/">
-                            <p>Sobre nós</p>
-                        </a>
-                        <a href="/">
-                            <p>Saiba como ajudar</p>
-                        </a>
+                        <Link className='rodape-cima-sites-link' to="/sobre">
+                            Sobre nós
+                        </Link>
+                        <Link className='rodape-cima-sites-link' to="/ajude">
+                            Ajude-nos
+                        </Link>
                     </div>
                     <div>
-                        <a href="/">
-                            <p>Parceiros</p>
-                        </a>
-                        <a href="/">
-                            <p>Contato</p>
-                        </a>
+                        <Link className='rodape-cima-sites-link' to="/parceiros">
+                            Parceiros
+                        </Link>
+                        <Link className='rodape-cima-sites-link' to="/faleconosco">
+                            Fale Conosco
+                        </Link>
                     </div>
                 </nav>
                 <div className="rodape-cima-social">
                     <p>Conheça nosso instagram</p>
-                    <a href="">
+                    <a href="https://www.instagram.com/campanhadopaozinho/">
                         <img src="instagram.png" alt="Instagram" />
                     </a>
                 </div>
