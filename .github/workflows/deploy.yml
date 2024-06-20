@@ -1,0 +1,39 @@
+name: Deploy React App to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # ou a branch que você deseja usar
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: |
+        cd frontend  # Navegar para a pasta do frontend
+        npm install
+
+    - name: Build project
+      run: |
+        cd frontend  # Navegar para a pasta do frontend
+        npm run build
+
+    - name: Deploy to GitHub Pages
+      run: |
+        cd frontend  # Navegar para a pasta do frontend
+        cp -r dist/* ../docs  # Copiar arquivos de build para a pasta docs
+        touch ../docs/.nojekyll  # Criar o arquivo .nojekyll na pasta docs
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
