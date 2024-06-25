@@ -321,7 +321,7 @@ body {
 }
 
 .modal-doacao img {
-  width: 300px;
+  width: 250px;
 }
 
 .modal-doacao-line {
@@ -493,4 +493,48 @@ label {
 .form-contato-botao {
   display: flex;
   justify-content: center;
+}
+
+/*Card de notícias*/
+#card-noticias {
+  max-width: 300px;
+  border: solid #6B240C 1px;
+  height: 500px;
+  margin: 50px;
+}
+
+.card-noticias-texto {
+  display: -webkit-box;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  /* Define o número de linhas antes de aplicar as reticências */
+  line-clamp: 5;
+  /* Compatibilidade para navegadores que suportam a propriedade não prefixada */
+}
+
+.card-noticias-titulo {
+  text-align: center;
+}
+
+#noticias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#card-noticias img {
+  max-width: 300px;
+}
+
+#card-noticias button {
+  display: block;
+  margin: 0 auto; /* Ajuste os valores conforme necessário */
+}
+
+.link-router {
+  text-decoration: none;
+  color: #FFF8E1;
 }

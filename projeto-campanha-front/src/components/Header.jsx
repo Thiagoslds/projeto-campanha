@@ -23,6 +23,9 @@ export default function Header() {
                     <Link to="/parceiros">
                         Parceiros
                     </Link>
+                    <Link to="/noticias">
+                        Notícias
+                    </Link>
                     <Link to="/faleconosco">
                         Fale Conosco
                     </Link>
