@@ -37,7 +37,7 @@ body {
 .header-menu {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
@@ -495,46 +495,109 @@ label {
   justify-content: center;
 }
 
+
+
 /*Card de notícias*/
-#card-noticias {
-  max-width: 300px;
-  border: solid #6B240C 1px;
-  height: 500px;
-  margin: 50px;
+/* Contêiner que envolve os cards */
+#noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
-.card-noticias-texto {
-  display: -webkit-box;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 5;
-  /* Define o número de linhas antes de aplicar as reticências */
-  line-clamp: 5;
-  /* Compatibilidade para navegadores que suportam a propriedade não prefixada */
+/* Estilo para cada card */
+#card-noticias {
+  max-width: 300px;
+  width: 100%;
+  border: solid #6B240C 1px;
+  height: 500px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .card-noticias-titulo {
   text-align: center;
+  margin: 10px 0; /* Adicione margem para separar o título do texto */
 }
 
-#noticias {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.card-noticias-texto {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5; /* Define o número de linhas antes de aplicar as reticências */
+  margin: 0 5px;
 }
 
 #card-noticias img {
-  max-width: 300px;
+  max-width: 100%;
+  height: auto;
 }
 
 #card-noticias button {
   display: block;
-  margin: 0 auto; /* Ajuste os valores conforme necessário */
+  margin: 0 auto 10px; /* Centraliza o botão e adiciona margem inferior */
 }
 
 .link-router {
-  text-decoration: none;
-  color: #FFF8E1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+/*Notícia completa*/
+#noticia-completa {
+  text-align: center;
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.noticia-completa-titulo {
+  font-size: 5rem;
+}
+
+.noticia-completa-imagem {
+  width: 40rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.noticia-completa-texto {
+  font-size: 1.2rem;
+}
+
+.noticia-completa-data {
+  text-align: left;
+  margin: 20px 50px;
+}
+
+.line-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.line {
+  flex-grow: 1;
+  height: 1px;
+  background-color: black;
+}
+
+.line-text {
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.legenda-foto {
+  font-size: 1rem;
+  color: #212121;
+  margin: 1px 0 50px 0;
 }

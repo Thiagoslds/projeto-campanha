@@ -5,8 +5,8 @@ export default function CardNoticias(news) {
         <div id="card-noticias">
             <img src={news.image} alt="Imagem da notícia" />
             <h2 className="card-noticias-titulo">{news.title}</h2>
-            <p className="card-noticias-texto">{news.text}</p>
-            <button className="button-red"><Link className='link-router' to={`/noticias/${news.id}`}>Leia mais</Link></button>
+            <p className="card-noticias-texto">{news?.text[0]}</p>
+            <Link className='link-router' to={`/noticias/${news.id}`} state={{news}}><button className="button-red">Leia mais</button></Link>
         </div>
     );
 }
