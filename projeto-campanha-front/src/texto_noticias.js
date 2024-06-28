@@ -1,4 +1,7 @@
 import Imagem1 from './assets/censo-pbh.jpg'
+import Imagem2 from './assets/rubinho-nunes.jpg'
+import Imagem3 from './assets/doadores.jpeg'
+
 
 export const TEXTO_NOTICIAS = [
     {
@@ -16,13 +19,25 @@ export const TEXTO_NOTICIAS = [
     },
     {
         id: 2,
-        title: 'Estatísticas do Governo mostram a desigualdade',
+        title: 'Câmara de São Paulo aprova projeto que prevê multa por doação de alimentos',
         text: [
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia aliquid iusto dolorem! Repudiandae ipsa nostrum facilis fuga temporibus, et quaerat quibusdam autem reiciendis! Maxime vel saepe sed tempora quo!',
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia aliquid iusto dolorem! Repudiandae ipsa nostrum facilis fuga temporibus, et quaerat quibusdam autem reiciendis! Maxime vel saepe sed tempora quo!',
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quia aliquid iusto dolorem! Repudiandae ipsa nostrum facilis fuga temporibus, et quaerat quibusdam autem reiciendis! Maxime vel saepe sed tempora quo!'
+            'A câmara de São Paulo aprovou um projeto que dificulta a distribuição de alimentos a pessoas em situação de rua. De autoria do vereador Rubinho Nunes (União Brasil), o projeto prevê multa de R$17,6 mil reais para quem descumprir as novas regras.',
+            'De acordo com o texto, é necessário ter autorização prévia da prefeitura, estar cadastrado e oferecer tendas, mesas e cadeiras na distribuição de alimentos.',
+            'A medida visa atacar a atuação do Padre Júlio Lancellotti, coordenador da Pastoral do Povo de Rua de São Paulo, que disse que esse PL é "aporofobico, de punição dos pobres e daqueles que estão ao seu serviço".',
+            'Em ano de eleição, cabe a nós analisar bem aqueles que irão estar nos poderes executivos e legislativos, para que criem medidas de proteção e assistência aos mais vulneráveis.'
         ],
-        image: Imagem1,
-        date: '26/06/2024'
+        image: Imagem2,
+        date: '28/06/2024'
+    },
+    {
+        id: 3,
+        title: 'Arrecadação de cobertores e distribuição',
+        text: [
+            'Gostaríamos de expressar nossa imensa gratidão ao doadores de cobertores, meias e agasalhos para as pessoas em situação de rua.',
+            'O gesto caloroso fará uma diferença significativa neste inverno, proporcionando conforto e esperança a quem mais precisa. Obrigado por aquecerem não apenas seus corpos, mas também seus corações!',
+            'Foram arrecadados mais de 100 cobertores e dezenas de peças de roupas, que estão sendo distribuídos aos nossos irmãos das ruas. Nosso agradecimento especial a todos os doadores  e aos nossos parceiros P7 Criativo, IPGC e Irmã Ló.'
+        ],
+        image: Imagem3,
+        date: '18/06/2024'
     }
 ];
