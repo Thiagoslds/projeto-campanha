@@ -32,6 +32,7 @@ body {
   display: flex;
   justify-content: space-between;
   height: 5rem;
+  width: 100%;
 }
 
 .header-menu {
@@ -58,6 +59,54 @@ body {
 
 .header-image-letter {
   width: 25rem;
+}
+
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  #header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .header-image {
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .header-image-logo {
+    width: 4rem;
+  }
+
+  .header-image-letter {
+    width: 20rem;
+  }
+
+  .header-menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .header-menu a {
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-image-logo {
+    width: 3rem;
+  }
+
+  .header-image-letter {
+    width: 15rem;
+  }
+
+  .header-menu {
+    font-size: 1rem;
+  }
 }
 
 /*Banner*/
@@ -92,6 +141,46 @@ body {
   font-size: 1.5rem;
   margin-top: 0px;
 }
+
+
+/* Estilos Responsivos para o Banner */
+@media (max-width: 768px) {
+  #banner {
+    padding: 5em;
+    height: auto;
+  }
+
+  #banner h1 {
+    font-size: 4rem;
+  }
+
+  #banner h3 {
+    font-size: 2rem;
+  }
+
+  #banner h4 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #banner {
+    padding: 2em;
+  }
+
+  #banner h1 {
+    font-size: 2.5rem;
+  }
+
+  #banner h3 {
+    font-size: 1.5rem;
+  }
+
+  #banner h4 {
+    font-size: 1rem;
+  }
+}
+
 
 /*Area Dados*/
 #area-dados {
@@ -134,6 +223,65 @@ body {
 #area-dados-data p {
   font-weight: 300;
   font-size: 1.5rem;
+}
+
+
+/* Estilos Responsivos para a Área de Dados */
+@media (max-width: 768px) {
+  #area-dados-info {
+    margin: 0 50px;
+  }
+
+  #area-dados-info h1 {
+    font-size: 3rem;
+  }
+
+  #area-dados-info h3 {
+    font-size: 1.5rem;
+  }
+
+  #area-dados-data {
+    flex-direction: column;
+    margin: 30px 20px;
+  }
+
+  #area-dados-data div {
+    margin-bottom: 20px;
+  }
+
+  #area-dados-data span {
+    font-size: 4rem;
+  }
+
+  #area-dados-data p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #area-dados-info {
+    margin: 0 20px;
+  }
+
+  #area-dados-info h1 {
+    font-size: 2.5rem;
+  }
+
+  #area-dados-info h3 {
+    font-size: 1.2rem;
+  }
+
+  #area-dados-data {
+    margin: 20px 10px;
+  }
+
+  #area-dados-data span {
+    font-size: 3rem;
+  }
+
+  #area-dados-data p {
+    font-size: 1rem;
+  }
 }
 
 
@@ -182,6 +330,48 @@ body {
   background-color: #FFCB7C;
   color: #212121;
   transition: 0.3s;
+}
+
+
+/* Estilos Responsivos para a Área de Doação */
+@media (max-width: 768px) {
+  .area-doacao-info {
+    margin: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .area-doacao-blocos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area-doacao-blocos div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area-doacao-blocos span {
+    width: 150px;
+    height: 100px;
+    font-size: 2em;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .area-doacao-info {
+    margin: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .area-doacao-blocos span {
+    width: 120px;
+    height: 80px;
+    font-size: 1.5em;
+    padding: 15px;
+  }
 }
 
 
@@ -257,6 +447,45 @@ body {
   font-weight: 600;
 }
 
+
+/* Estilos Responsivos para a Área de Voluntário */
+@media (max-width: 768px) {
+  #area-voluntario {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .area-voluntario-texto {
+    font-size: 3rem;
+  }
+
+  #area-voluntario div {
+    width: 80%;
+    height: 25rem;
+    margin-bottom: 20px;
+  }
+
+  #area-voluntario div p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .area-voluntario-texto {
+    font-size: 2.5rem;
+  }
+
+  #area-voluntario div {
+    width: 90%;
+    height: 20rem;
+  }
+
+  #area-voluntario div p {
+    font-size: 1.2rem;
+  }
+}
+
+
 /*Rodapé*/
 
 #rodape {
@@ -304,6 +533,59 @@ body {
   margin-bottom: 0;
 }
 
+
+/* Estilos Responsivos para o Rodapé */
+@media (max-width: 768px) {
+  #rodape-cima {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rodape-cima-local {
+    margin-left: 0;
+  }
+
+  .rodape-cima-sites {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rodape-cima-sites div {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .rodape-cima-sites-link {
+    margin: 10px 5px;
+  }
+
+  .rodape-cima-social {
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+  #rodape-baixo {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #rodape-cima {
+    padding: 10px 5px 30px 5px;
+  }
+
+  .rodape-cima-sites-link {
+    margin: 5px 2px;
+    font-size: 0.9rem;
+  }
+
+  #rodape-baixo p {
+    font-size: 0.9rem;
+  }
+}
+
+
 /*Modal*/
 
 .modal-doacao {
@@ -335,7 +617,6 @@ body {
 
 /*Pagina Sobre*/
 
-
 .pagina-sobre-bloco {
   display: flex;
   align-items: center;
@@ -363,6 +644,48 @@ body {
   color: #212121;
   margin-top: 1px;
 }
+
+/* Estilos Responsivos para a Página Sobre */
+@media (max-width: 768px) {
+  .pagina-sobre-bloco {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagina-sobre-bloco img {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .pagina-sobre-bloco p {
+    margin: 20px;
+    font-size: 1.4rem;
+  }
+
+  #pagina-sobre {
+    margin: 50px 20px 30px 20px;
+  }
+
+  .pagina-sobre-bloco-legenda p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagina-sobre-bloco p {
+    margin: 10px;
+    font-size: 1.2rem;
+  }
+
+  #pagina-sobre {
+    margin: 30px 10px 20px 10px;
+  }
+
+  .pagina-sobre-bloco-legenda p {
+    font-size: 0.8rem;
+  }
+}
+
 
 /*Página Como Ajudar*/
 
@@ -401,6 +724,51 @@ body {
   text-decoration: none;
   color: #6B240C;
 }
+
+/* Página Como Ajudar */
+
+@media (max-width: 768px) {
+  #pagina-ajudar {
+    margin: 50px 20px 30px 20px;
+  }
+
+  .pagina-ajudar-bloco {
+    flex-direction: column;
+    margin: 40px 0;
+  }
+
+  .pagina-ajudar-bloco-linha {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagina-ajudar-bloco img {
+    width: 100px;
+    height: 100px;
+    margin: 20px 0;
+  }
+
+  .pagina-ajudar-bloco-texto p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pagina-ajudar-bloco-texto p {
+    font-size: 1.2rem;
+  }
+
+  #pagina-ajudar {
+    margin: 30px 10px 20px 10px;
+  }
+
+  .pagina-ajudar-bloco img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+  }
+}
+
 
 /*Parceiros*/
 
@@ -444,6 +812,31 @@ body {
 
 .parceiro-bloco span {
   font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .parceiro-bloco {
+    margin: 2rem 2rem; /* Reduz ainda mais a margem nas laterais */
+  }
+
+  .parceiro-bloco img {
+    width: 100%; /* Ajusta a largura da imagem para ocupar todo o espaço disponível */
+    max-width: 30rem; /* Mantém um limite máximo de largura */
+  }
+}
+
+@media (max-width: 480px) {
+  .parceiro-bloco {
+    margin: 2rem 1rem; /* Margem mínima nas laterais */
+  }
+
+  .parceiro-bloco h1 {
+    font-size: 2.5rem; /* Reduz o tamanho do título */
+  }
+
+  .parceiro-bloco p {
+    font-size: 1.3rem; /* Reduz o tamanho do texto */
+  }
 }
 
 /* Fale Conosco */
@@ -553,7 +946,28 @@ label {
   text-decoration: none;
 }
 
+/* Tablets (768px) */
+@media (max-width: 768px) {
+  #noticias {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 0 20px; /* Adiciona um espaçamento nos lados */
+  }
 
+  #card-noticias {
+    margin: 20px 0; /* Remove a margem lateral e mantém superior e inferior */
+  }
+}
+
+/* Dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+  #card-noticias {
+    height: auto; /* Altura automática para se ajustar ao conteúdo */
+  }
+
+  .card-noticias-texto {
+    -webkit-line-clamp: 3; /* Reduz o número de linhas de texto visíveis */
+  }
+}
 
 
 /*Notícia completa*/
@@ -604,4 +1018,56 @@ label {
   font-size: 1rem;
   color: #212121;
   margin: 1px 0 50px 0;
+}
+
+/* Tablets (até 768px) */
+@media (max-width: 768px) {
+  #noticia-completa {
+    width: 90%; /* Utiliza 90% da largura disponível */
+    margin: 0 auto; /* Centraliza na tela */
+  }
+
+  .noticia-completa-titulo {
+    font-size: 3.5rem; /* Reduz tamanho do título */
+  }
+
+  .noticia-completa-imagem {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner */
+    margin-top: 30px; /* Reduz margem superior */
+  }
+
+  .noticia-completa-texto {
+    font-size: 1.1rem; /* Reduz tamanho da fonte do texto */
+    margin: 15px 0; /* Ajusta o espaçamento entre parágrafos */
+  }
+
+  .legenda-foto {
+    margin: 5px 0 30px 0; /* Ajusta a margem da legenda da foto */
+  }
+}
+
+/* Dispositivos móveis (até 480px) */
+@media (max-width: 480px) {
+  .noticia-completa-titulo {
+    font-size: 2.5rem; /* Reduz ainda mais o tamanho do título */
+  }
+
+  .noticia-completa-imagem {
+    margin-top: 20px; /* Reduz margem superior da imagem */
+  }
+
+  .noticia-completa-texto {
+    font-size: 1rem; /* Reduz tamanho da fonte do texto */
+    margin: 10px 0; /* Ajusta o espaçamento entre parágrafos */
+  }
+
+  .noticia-completa-data {
+    font-size: 0.9rem; /* Reduz tamanho da fonte da data */
+  }
+
+  .legenda-foto {
+    font-size: 0.9rem; /* Reduz tamanho da fonte da legenda */
+    margin: 5px 0 20px 0; /* Ajusta a margem da legenda da foto */
+  }
 }
