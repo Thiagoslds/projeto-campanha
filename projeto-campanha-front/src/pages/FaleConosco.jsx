@@ -1,6 +1,10 @@
 import { useState } from "react";
+import emailjs from '@emailjs/browser';
 
-const apiUrl = import.meta.env.VITE_URL_LOCAL;
+const serviceID = import.meta.env.VITE_SERVICE_ID;
+const templateID = import.meta.env.VITE_TEMPLATE_ID;
+const publicKey = import.meta.env.VITE_USER_ID;
+
 
 export default function FaleConosco() {
     const [isSuccess, setIsSuccess] = useState(false);
@@ -8,22 +12,19 @@ export default function FaleConosco() {
     function handleSubmit(event) {
         event.preventDefault();
 
-        const formData = new FormData(event.target);
-        const data = Object.fromEntries(formData.entries());
-        console.log(data);
-        sendData(data);
-    }
-
-    async function sendData(userData) {
-        const response = await fetch(`${apiUrl}/user-data`, {
-            method: 'POST',
-            body: JSON.stringify(userData),
-            headers: {
-                'Content-Type': 'application/json'
+        emailjs.sendForm(
+            serviceID,
+            templateID,
+            event.target,
+            {
+                publicKey: publicKey
             }
-        });
-
-        response.status === 200 ? setIsSuccess(true) : setIsSuccess(false);
+        )
+            .then((result) => {
+                setIsSuccess(true);
+            }, (error) => {
+                console.log("Erro de envio: " + error.text);
+            });
     }
 
     return (
@@ -32,20 +33,20 @@ export default function FaleConosco() {
             <form id="form-contato" onSubmit={handleSubmit}>
                 <div className="form-contato-dados">
                     <div className="form-contato-campo">
-                        <label htmlFor="email">Email</label>
-                        <input id="email" type="email" name="email" />
+                        <label htmlFor="from_email">Email</label>
+                        <input id="from_email" type="email" name="from_email" />
                     </div>
 
                     <div className="form-contato-campo">
-                        <label htmlFor="name">Nome</label>
-                        <input type="text" id="name" name="name" />
+                        <label htmlFor="from_name">Nome</label>
+                        <input type="text" id="from_name" name="from_name" />
                     </div>
                 </div>
 
 
                 <div className="form-contato-mensagem">
-                    <label htmlFor="text">Escreva seu comentário:</label>
-                    <textarea id="text" name="text" rows="5" cols="33">
+                    <label htmlFor="message">Escreva seu comentário:</label>
+                    <textarea id="message" name="message" rows="5" cols="33">
                     </textarea>
                 </div>
 
